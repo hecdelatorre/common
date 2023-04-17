@@ -6,7 +6,7 @@ COMMON_PROMPT_SYMBOL="❯"
 # Colors
 COMMON_COLORS_HOST_ME=green
 COMMON_COLORS_HOST_AWS_VAULT=yellow
-COMMON_COLORS_CURRENT_DIR=blue
+COMMON_COLORS_CURRENT_DIR=cyan
 COMMON_COLORS_RETURN_STATUS_TRUE=magenta
 COMMON_COLORS_RETURN_STATUS_FALSE=yellow
 COMMON_COLORS_GIT_STATUS_DEFAULT=green
@@ -45,7 +45,7 @@ common_host() {
 
 # Current directory
 common_current_dir() {
-  echo -n "%{$fg[$COMMON_COLORS_CURRENT_DIR]%}%c "
+  echo -n " %{$fg[$COMMON_COLORS_CURRENT_DIR]%}%c "
 }
 
 # Prompt symbol
